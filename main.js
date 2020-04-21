@@ -12,18 +12,14 @@ var prezzo = 0.21;
 //calcolare costo viaggio
 var costo= (chilometri * prezzo);
 
-//sconto minorenne
-var sconto_minorenne = 0.8;
-
-//sconto minorenne
-var sconto_over65 = 0.6;
-
 //applicare sconti tariffa
 
 if (eta < 18) {
-    console.log(costo*sconto_minorenne)
+    //sconto minorenne
+    console.log(costo * 0.8)
 } else if (eta > 65){
-    console.log(costo*sconto_over65);
+    //sconto over65
+    console.log(costo * 0.6);
 } else{
     console.log(costo);
 }
